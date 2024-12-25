@@ -6,19 +6,49 @@ import Image from "next/image";
 
 const InfoImage = [
   {
-    id: "42155fab-ccdb-4ac7-81b0-2c991ac6481d",
+    id: 1,
     image: "/image/image1.jpg",
     title: "Sosialiasi Pembuatan Keirpik Pepaya",
   },
   {
-    id: "b3deeaaa-0233-4043-8166-2cf1f76cc32f",
+    id: 2,
     image: "/image/gambar4.jpg",
     title: "Demontrasi Pembuatan Keirpik Pepaya Kepada Masyarakat",
   },
   {
-    id: "7dd694b4-3d99-4fef-85f6-6de4147ac7cc",
+    id: 3,
     image: "/image/gambar3.jpg",
     title: "Foto bersama masyarakat desa tebaban usai kegiatan sosialisasi",
+  },
+  {
+    id: 4,
+    image: "/image/produksi1.jpg",
+    title: "Proses Penggorengan keripik pepaya",
+  },
+  {
+    id: 5,
+    image: "/image/produksi2.jpg",
+    title: "Proses pembuatan keripik pepaya : Pencampuran tepung pada keripik papaya",
+  },
+  {
+    id: 6,
+    image: "/image/produksi3.jpg",
+    title: "Proses pembalutan tepung pada keripik pepaya",
+  },
+  {
+    id: 7,
+    image: "/image/gambar5.jpg",
+    title: "Demostasi pembuatan keripik pepaya pada masyarakat desa tebaban",
+  },
+  {
+    id: 8,
+    image: "/image/gambar6.jpg",
+    title: "Kolaborasi pembuatan keripik pepaya bersama KKN PGPAUD Universitas Hamzanwadi",
+  },
+  {
+    id: 9,
+    image: "/image/gambar7.jpg",
+    title: "Demostasi pembuatan keripik pepaya pada masyarakat desa tebaban",
   },
 ];
 export default function Home() {

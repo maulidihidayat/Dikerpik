@@ -6,33 +6,35 @@ const ProductData = [
   {
     id: 1,
     title: "Keripik Pepaya",
+    subtitle: "Rasa Original",
     price: 10000,
     image: "https://example.com/keripik-pepaya.jpg",
     description:
       "Nikmati keripik pepaya yang renyah dan lezat ini. Cocok untuk camilan sehari-hari",
     stock: 100,
-    href:"https://wa.me/62087763214718?text=Hallo%20saya%20I%20ingin%20memesan%20produk%20anda%20Produk%20Jumlah%20Nama%20Alamat",
+    href: "https://wa.me/62087763214718?text=Hallo%20saya%20I%20ingin%20memesan%20produk%20anda%20Produk%20Jumlah%20Nama%20Alamat",
   },
   {
     id: 2,
-    title: "Keripik Mangga",
+    title: "Keripik Pepaya",
+    subtitle: "Rasa Balado",
     price: 10000,
     image: "https://example.com/keripik-pepaya.jpg",
     description:
       "Rasakan manisnya keripik mangga yang menggoda selera. Camilan yang tidak boleh dilewatka",
     stock: 100,
-    href:"https://wa.me/62085932443527text=Hallo%20saya%20I%20ingin%20memesan%20produk%20anda%20Produk%20Jumlah%20Nama%20Alamat",
-    
+    href: "https://wa.me/62085932443527text=Hallo%20saya%20I%20ingin%20memesan%20produk%20anda%20Produk%20Jumlah%20Nama%20Alamat",
   },
   {
     id: 3,
-    title: "Keripik Nanas",
+    title: "Keripik Pepaya Rasa Jagung",
+    subtitle: "Rasa Jagung",
     price: 40000,
     image: "https://example.com/keripik-pepaya.jpg",
     description:
       "Keripik nanas yang segar dan renyah, sempurna untuk menemani waktu santai Anda",
     stock: 100,
-    href:"https://wa.me/62087700147370?text=Hallo%20saya%20I%20ingin%20memesan%20produk%20anda%20Produk%20Jumlah%20Nama%20Alamat",
+    href: "https://wa.me/62087700147370?text=Hallo%20saya%20I%20ingin%20memesan%20produk%20anda%20Produk%20Jumlah%20Nama%20Alamat",
   },
 ];
 const page = () => {

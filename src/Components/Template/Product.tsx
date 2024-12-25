@@ -7,6 +7,7 @@ interface ProductProps {
   description: string;
   price: number;
   href: string;
+  subtitle: string;
 }
 
 interface ProductData {
@@ -25,6 +26,9 @@ const Product = ({ data }: ProductData) => {
           <h3 className="text-[20px] sm:text-[26px] md:text-[28px] lg:text-[24px] text-secondary font-bold text-center">
             {e.title}
           </h3>
+          <h4 className="text-[18px] sm:text-[26px] md:text-[28px] lg:text-[24px] text-secondary font-bold text-center">
+            {e.subtitle}
+          </h4>
           <p className="text-success text-[16px] sm:text-[18px] md:text-[20px] lg:text-[14px] text-center leading-relaxed mt-2 max-w-lg mx-auto">
             {e.description}
           </p>
