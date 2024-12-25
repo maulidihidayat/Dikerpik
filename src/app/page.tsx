@@ -1,23 +1,22 @@
 import Smile from "@/Components/Icon/Smile";
 import ImageSwippe from "@/Components/Info/ImageSwippe";
 import Cover from "@/Components/Template/Cover";
-import Footer from "@/Components/Template/Footer";
 import Youtube from "@/Components/Template/Youtube";
 import Image from "next/image";
 
 const InfoImage = [
   {
-    id: 1,
+    id: "42155fab-ccdb-4ac7-81b0-2c991ac6481d",
     image: "/image/image1.jpg",
     title: "Sosialiasi Pembuatan Keirpik Pepaya",
   },
   {
-    id: 2,
+    id: "b3deeaaa-0233-4043-8166-2cf1f76cc32f",
     image: "/image/gambar4.jpg",
     title: "Demontrasi Pembuatan Keirpik Pepaya Kepada Masyarakat",
   },
   {
-    id: 3,
+    id: "7dd694b4-3d99-4fef-85f6-6de4147ac7cc",
     image: "/image/gambar3.jpg",
     title: "Foto bersama masyarakat desa tebaban usai kegiatan sosialisasi",
   },
@@ -46,6 +45,13 @@ export default function Home() {
             width={50}
             height={50}
           />
+          <Image
+            src={"/image/logoKKNN.jpg"}
+            alt="logoFmipa"
+            width={50}
+            height={50}
+            className="rounded-full"
+          />
         </div>
       </div>
 
@@ -70,8 +76,9 @@ export default function Home() {
 
       <div className="mt-10 mb-10 p-2">
         <h1 className="text-[24px] lg:text-3xl text-secondary font-black text-center mb-4">
-          Sosialisasi pembuatan <span className="text-primary">keripik pepaya</span>{" "}
-          Kepada Masayakat Desa Tebaban
+          Sosialisasi pembuatan{" "}
+          <span className="text-primary">keripik pepaya</span> Kepada Masayakat
+          Desa Tebaban
         </h1>
         <ImageSwippe data={InfoImage} />
       </div>
@@ -88,7 +95,6 @@ export default function Home() {
           <Youtube src="https://www.youtube.com/embed/FwTBVTioFm0?si=hUuxx0X-dH0LE2gp" />
         </div>
       </div>
-      {/* <Footer className={""}/> */}
     </div>
   );
 }
