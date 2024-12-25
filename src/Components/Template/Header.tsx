@@ -9,7 +9,7 @@ const Navbar = () => {
     { name: "Home", href: "/" },
     { name: "Produk", href: "/produk" },
     { name: "Kritik & Saran", href: "/saran" },
-    { name: "Tentang Kami", href: "/aboutUs" },
+    { name: "Tentang Kami", href: "/about-us" },
   ];
   const [scrolled, setScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,15 +43,15 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className={`z-10 ${scrolled ? "bg-white" : ""}`}>
+    <header className={`${scrolled ? "bg-white " : ""}`}>
       <nav className="flex items-center justify-between p-2 md:p-6 py-3 sm:p-8">
         <div className="p-2">
-          <h1 className="text-2xl md:text-2xl font-black text-primary">
+          <h1 className="text-3xl md:text-4xl font-black text-primary">
             Keripik Papaya
           </h1>
         </div>
         <div className="flex items-center space-x-4 md:space-x-10">
-          <div className="hidden md:flex">
+          <div className="hidden lg:flex">
             <ul className="flex space-x-4 md:space-x-10">
               {navItems.map((item, index) => (
                 <li key={index}>
@@ -66,33 +66,32 @@ const Navbar = () => {
               ))}
             </ul>
           </div>
-          <div className="flex items-center search-container">
+          <div className="hidden lg:flex items-center search-container">
             <Link href="/auth/login">
-            <Button name="Gabung" />
+              <Button name="Gabung" />
             </Link>
           </div>
           {/* Hamburger Icon */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
-              <Menu className="text-secondary" />
+              <Menu className="text-secondary " />
             </button>
           </div>
         </div>
       </nav>
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div ref={menuRef} className="md:hidden shadow-md z-10 p-4 bg-white">
-          <div className="flex justify-between items-center">
-            <h2 className="text-lg font-bold">Menu</h2>
-          </div>
+        <div
+          ref={menuRef}
+          className="relative lg:hidden shadow-md p-4 bg-white rounded-b-3xl"
+        >
           <ul className="flex flex-col space-y-6 mt-4">
             {navItems.map((item, index) => (
-              <li key={index}>
+              <li key={index} onClick={() => setIsMenuOpen(false)}>
                 <Link
                   href={item.href}
-                  className="text-[18px] font-semibold text-secondary bg-bgproduksekunder flex justify-center p-2 rounded-xl border-2 border-b-[7px]                  border-secondary"
+                  className="text-[18px] font-semibold text-secondary bg-bgproduksekunder flex justify-center p-2 rounded-xl border-2 border-b-[7px] border-secondary"
                   aria-label={item.name}
-                  onClick={() => setIsMenuOpen(false)} // Close menu on link click
                 >
                   {item.name}
                 </Link>
@@ -100,7 +99,18 @@ const Navbar = () => {
             ))}
             <hr />
           </ul>
-          <button onClick={() => setIsMenuOpen(false)} className="flex justify-center items-center mx-auto mt-4 bg-primary p-1 rounded-full border-2 border-secondary">
+          <div className="flex w-full items-center mt-4">
+            <Link
+              href="/auth/login"
+              className="bg-primary text-white border-2 border-b-[7px] border-secondary rounded-2xl py-3 px-2 w-full text-center font-bold"
+            >
+              Gabung
+            </Link>
+          </div>
+          <button
+            onClick={() => setIsMenuOpen(false)}
+            className="flex justify-center items-center mx-auto mt-8 bg-primary p-2 rounded-full border-2 border-secondary"
+          >
             <X className="text-white" />
           </button>
         </div>

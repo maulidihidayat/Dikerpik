@@ -35,10 +35,10 @@ const page = () => {
   return (
     <div>
       <div className="max-w-3xl mx-auto mt-4 text-center p-8">
-        <h1 className="text-[32px] text-secondary font-black">
+        <h1 className="text-[30px] lg:text-[40px] text-secondary font-black">
           Yuk Order Keripik Pepaya!
         </h1>
-        <p className="text-success text-[14px] leading-relaxed mt-2 max-w-lg mx-auto">
+        <p className="text-success text-[14px] lg:text-[20px] leading-relaxed mt-2 max-w-lg mx-auto">
           <span className="font-bold text-secondary bg-bgaccent">
             Bro & Sist
           </span>
@@ -64,7 +64,7 @@ const page = () => {
         </h2>
         <Product data={ProductData} />
       </div>
-      <Footer className={""} />
+      {/* <Footer className={""} /> */}
     </div>
   );
 };
