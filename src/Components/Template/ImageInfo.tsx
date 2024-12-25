@@ -10,7 +10,7 @@ interface imageProps {
 export default function ImageInfo({image , title} : imageProps) {
   return (
     <div>
-      <div className="flex flex-col justify-center items-center  p-2">
+      <div className="flex flex-col justify-center items-center p-2">
         <Image
           src={image}
           alt={title}

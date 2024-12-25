@@ -57,7 +57,7 @@ const Navbar = () => {
                 <li key={index}>
                   <Link
                     href={item.href}
-                    className="text-sm md:text-base text-secondary"
+                    className="text-sm md:text-base text-secondary hover:text-primary hover:underline trasnform duration-500 "
                     aria-label={item.name}
                   >
                     {item.name}
