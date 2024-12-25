@@ -43,8 +43,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className={`${scrolled ? "bg-white " : ""}`}>
-      <nav className="flex items-center justify-between p-2 md:p-6 py-3 sm:p-8">
+    <header className={`${scrolled ? "bg-white sticky top-0 z-10" : ""}`}>
+      <nav className="flex items-center justify-between p-1 md:p-4 py-3 sm:p-8">
         <div className="p-2">
           <h1 className="text-3xl md:text-4xl font-black text-primary">
             Keripik Papaya

@@ -1,13 +1,35 @@
 import Smile from "@/Components/Icon/Smile";
+import ImageSwippe from "@/Components/Info/ImageSwippe";
 import Cover from "@/Components/Template/Cover";
 import Footer from "@/Components/Template/Footer";
 import Youtube from "@/Components/Template/Youtube";
 import Image from "next/image";
+
+const InfoImage = [
+  {
+    id: 1,
+    image: "/image/image1.jpg",
+    title: "Sosialiasi Pembuatan Keirpik Pepaya",
+  },
+  {
+    id: 2,
+    image: "/image/gambar4.jpg",
+    title: "Demontrasi Pembuatan Keirpik Pepaya Kepada Masyarakat",
+  },
+  {
+    id: 3,
+    image: "/image/gambar3.jpg",
+    title: "Foto bersama masyarakat desa tebaban usai kegiatan sosialisasi",
+  },
+];
 export default function Home() {
   return (
     <div>
       <Cover />
-      <div className="p-5 border-b-4 border-secondary bg-primary mt-10" id="section2">
+      <div
+        className="p-5 border-b-4 border-secondary bg-primary mt-10"
+        id="section2"
+      >
         <h1 className="text-[18px] text-white font-semibold text-center">
           Bro & Sist Produk ini sudah didukung oleh :
         </h1>
@@ -46,7 +68,15 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="mt-10 mb-20">
+      <div className="mt-10 mb-10 p-2">
+        <h1 className="text-[24px] lg:text-3xl text-secondary font-black text-center mb-4">
+          Sosialisasi pembuatan <span className="text-primary">keripik pepaya</span>{" "}
+          Kepada Masayakat Desa Tebaban
+        </h1>
+        <ImageSwippe data={InfoImage} />
+      </div>
+
+      <div className="mt-10 mb-20 ">
         <h1 className="text-[24px] lg:text-3xl text-secondary font-black text-center mb-4">
           Video pembuatan <span className="text-primary">keripik pepaya</span>{" "}
           di Youtube
