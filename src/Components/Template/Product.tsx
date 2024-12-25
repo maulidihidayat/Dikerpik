@@ -27,13 +27,13 @@ const Product = ({ data }: ProductData) => {
             lineColor=""
             className="mb-4"
           />
-          <h3 className="text-[16x] sm:text-[26px] md:text-[28px] lg:text-[24px] text-secondary font-bold text-center">
+          <h3 className="text-[20px] sm:text-[26px] md:text-[28px] lg:text-[24px] text-secondary font-bold text-center">
             {e.title}
           </h3>
-          <p className="text-success text-[10px] sm:text-[18px] md:text-[20px] lg:text-[14px] text-center leading-relaxed mt-2 max-w-lg mx-auto">
+          <p className="text-success text-[16px] sm:text-[18px] md:text-[20px] lg:text-[14px] text-center leading-relaxed mt-2 max-w-lg mx-auto">
             {e.description}
           </p>
-          <p className="mt-2 text-sm font-bold text-success">Rp. {e.price}</p>
+          <p className="mt-2 text-md lg:text-sm font-bold text-success">Rp. {e.price}</p>
           <div className="mt-4">
             <Button name="Order Sekarang" />
           </div>
