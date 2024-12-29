@@ -3,6 +3,7 @@ import Smile from "../Icon/Smile";
 import Button from "../Info/Button";
 
 interface ProductProps {
+  id: string; // Menambahkan id ke props
   title: string;
   description: string;
   price: number;
@@ -16,10 +17,10 @@ interface ProductData {
 
 const Product = ({ data }: ProductData) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:flex-col xl:grid-cols-3 gap-4 p-6 mx-auto items-center ">
-      {data?.map((e: ProductProps, i: number) => (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:flex-col xl:grid-cols-3 gap-4 p-6 mx-auto items-center">
+      {data?.map((e: ProductProps) => (
         <div
-          key={i}
+          key={e.id} // Menggunakan e.id sebagai key
           className="flex flex-col justify-center items-center mx-auto p-4 lg:p-6 border-4 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:items-center shadow-md rounded-3xl border-secondary bg-bgproduk"
         >
           <Smile fill="" height="50" width="50" lineColor="" className="mb-4" />
@@ -38,6 +39,7 @@ const Product = ({ data }: ProductData) => {
           <a
             href={e.href}
             target="_blank"
+            rel="noopener noreferrer"
             className="mt-4"
           >
             <Button name="Order Sekarang" />

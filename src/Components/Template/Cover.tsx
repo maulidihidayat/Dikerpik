@@ -6,8 +6,8 @@ import Link from "next/link";
 
 const Cover = () => {
   return (
-    <div className="lg:flex lg:flex-row-reverse lg:items-center lg:p-20 lg:-mt-6" >
-      <div className="relative mb-4 w-96 h-96 lg:w-[600px] mx-auto mt-10 lg:-mt-10">
+    <div className="md:flex md:flex-row-reverse lg:items-center md:p-20 md:mt-10  lg:-mt-4" >
+      <div className="relative mb-4 w-full lg:w-[600px] mx-auto mt-4 lg:-mt-10">
         <Image
           src={"/image/logoPAPAYA.png"}
           alt={"logo"}
@@ -17,7 +17,7 @@ const Cover = () => {
           className="rounded-3xl transition duration-300 ease-in-out"
         />
       </div>
-      <div className="px-6 mt-8  ">
+      <div className="px-6 ">
         <h3 className="text-4xl lg:text-[56px] font-black text-secondary leading-relaxed">Cemilan asik</h3>
         <h3 className="text-4xl lg:text-[56px] font-black text-secondary ">dikala boring?</h3>
         <h3 className="text-3xl lg:text-[32px] font-black text-primary lg:mt-5">

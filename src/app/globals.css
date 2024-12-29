@@ -10,7 +10,7 @@
 
 body {
   color: var(--foreground);
-  background-image: url('https://somai.id/wp-content/uploads/2023/11/Landing-Page-1.svg');
+  background-image: url("https://somai.id/wp-content/uploads/2023/11/Landing-Page-1.svg");
   background-repeat: no-repeat;
   font-family: Inter, 'san-serif';
   cursor: url('/src/source/svg/openhand.png');
