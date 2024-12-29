@@ -9,7 +9,7 @@ const Youtube = ({ src }: youtube) => {
     <div className="flex items-center justify-center ">
       <iframe
         width="560"
-        height="315"
+        height="450"
         src={src}
         title="YouTube video player"
         frameBorder="0"

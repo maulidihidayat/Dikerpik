@@ -63,6 +63,7 @@ export default function Home() {
         <div className="flex justify-center gap-4 mt-2">
           <Image src="/image/logo.png" alt="logoFmipa" width={50} height={50} />
           <Image src="/image/Fmipa.png" alt="logoFmipa" width={50} height={50} />
+          <Image src="/image/logo pif.png" alt="logoFmipa" width={50} height={50} />
           <Image src="/image/logoKKNN.jpg" alt="logoFmipa" width={50} height={50} className="rounded-full" />
         </div>
       </div>
