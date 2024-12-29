@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import React, { useEffect, useState, useRef } from "react";
 import Button from "../Info/Button";
+import Image from "next/image";
 
 const Navbar = () => {
   const navItems = [
@@ -43,21 +44,25 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className={`${scrolled ? "bg-white sticky top-0 z-10" : ""}`}>
-      <nav className="flex items-center justify-between p-1 md:p-4 py-3 sm:p-8">
-        <div className="p-2">
-          <h1 className="text-3xl md:text-4xl font-black text-primary">
-            Keripik Papaya
-          </h1>
-        </div>
-        <div className="flex items-center space-x-4 md:space-x-10">
+    <header className={`${scrolled ? "bg-white sticky top-0 z-10 " : ""}`}>
+      <nav className="flex items-center justify-between  md:p-2 py-2 sm:p-2 ">
+        <Link href={"/"} className="p-2 lg:px-10 cursor-pointer">
+          <Image
+            alt="Logo"
+            src={"/image/LogoKeripik.png"}
+            width={200}
+            height={100}
+            className="text-3xl md:text-4xl font-black text-primary"
+          />
+        </Link>
+        <div className="flex items-center space-x-4 md:space-x-10 lg:px-10">
           <div className="hidden lg:flex">
             <ul className="flex space-x-4 md:space-x-10">
               {navItems.map((item, index) => (
                 <li key={index}>
                   <Link
                     href={item.href}
-                    className="text-sm md:text-base text-secondary hover:text-primary hover:underline trasnform duration-500 "
+                    className="text-md md:text-base text-secondary hover:text-primary hover:underline trasnform duration-500 "
                     aria-label={item.name}
                   >
                     {item.name}
@@ -67,14 +72,14 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="hidden lg:flex items-center search-container">
-            <Link href="/auth/login">
-              <Button name="Gabung" />
+            <Link href="/produk">
+              <Button name="Pesan Sekarang" />
             </Link>
           </div>
           {/* Hamburger Icon */}
-          <div className="lg:hidden">
+          <div className="lg:hidden px-6 w-20 ">
             <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
-              <Menu className="text-secondary " />
+              <Menu className="text-secondary text-[24px] hover-bg-red-500" />
             </button>
           </div>
         </div>
@@ -83,7 +88,7 @@ const Navbar = () => {
       {isMenuOpen && (
         <div
           ref={menuRef}
-          className="relative lg:hidden shadow-md p-4 bg-white rounded-b-3xl"
+          className="relative lg:hidden shadow-md p-8 bg-white rounded-b-3xl transform translate duration-500"
         >
           <ul className="flex flex-col space-y-6 mt-4">
             {navItems.map((item, index) => (
@@ -101,10 +106,10 @@ const Navbar = () => {
           </ul>
           <div className="flex w-full items-center mt-4">
             <Link
-              href="/auth/login"
+              href="/produk"
               className="bg-primary text-white border-2 border-b-[7px] border-secondary rounded-2xl py-3 px-2 w-full text-center font-bold"
             >
-              Gabung
+              Pesan Sekarang
             </Link>
           </div>
           <button

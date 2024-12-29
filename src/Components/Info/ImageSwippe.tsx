@@ -6,7 +6,7 @@ import "swiper/swiper-bundle.css";
 import ImageInfo from "../Template/ImageInfo";
 
 interface ImageData {
-  id: string;
+  id: number;
   image: string;
   title: string;
 }
