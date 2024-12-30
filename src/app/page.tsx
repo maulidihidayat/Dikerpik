@@ -91,10 +91,10 @@ export default function Home() {
           Video pembuatan <span className="text-primary">keripik pepaya</span> di YouTube
         </h1>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 p-4 lg:p-10">
-          <Youtube src="https://www.youtube.com/embed/a_iQqN1Hp74?si=SzqA2tB5KhmzLnZZ" />
-          <Youtube src="https://www.youtube.com/embed/FwTBVTioFm0?si=hUuxx0X-dH0LE2gp" />
-          <Youtube src="https://www.youtube.com/embed/a_iQqN1Hp74?si=SzqA2tB5KhmzLnZZ" />
-          <Youtube src="https://www.youtube.com/embed/FwTBVTioFm0?si=hUuxx0X-dH0LE2gp" />
+          <Youtube src="https://www.youtube.com/embed/45trvSsXfb0?si=3xWVeX3-4Pzo6M-D" />
+          <Youtube src="https://www.youtube.com/embed/bIjs_RKPY-o?si=CsGclatM58kTIemG" />
+          <Youtube src="https://www.youtube.com/embed/Tun873hmZ5k?si=MRD5nMSVk0G_eTLJ" />
+          <Youtube src="https://www.youtube.com/embed/WvODhYqoxiI?si=ClhISputxNHD1oTS" />
         </div>
       </div>
     </div>
