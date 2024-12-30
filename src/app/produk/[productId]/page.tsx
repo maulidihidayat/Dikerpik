@@ -2,6 +2,7 @@
 import { useParams } from "next/navigation";
 import { useState } from "react";
 import Image from "next/image";
+import Button from "@/Components/Info/Button";
 
 const ProductData = [
   {
@@ -11,7 +12,7 @@ const ProductData = [
     price: 10000,
     image: "/image/prouduct.jpg",
     description: "Nikmati keripik pepaya yang renyah dan lezat ini.",
-    whatsappNumber: "62087763214718", // Nomor WhatsApp pemilik produk
+    whatsappNumber: "6287700147370", // Nomor WhatsApp pemilik produk
   },
   {
     id: "5332d234-b7b9-4793-9428-feef95bedeec",
@@ -20,7 +21,7 @@ const ProductData = [
     price: 10000,
     image: "/image/product2.jpg",
     description: "Rasakan manisnya keripik mangga yang menggoda selera.",
-    whatsappNumber: "62087763214718", // Nomor WhatsApp pemilik produk
+    whatsappNumber: "6281999711628", // Nomor WhatsApp pemilik produk
   },
   {
     id: "d1e2f3a4-b5c6-7890-abcd-ef1234567890",
@@ -29,7 +30,7 @@ const ProductData = [
     price: 40000,
     image: "/image/prouduct.jpg",
     description: "Keripik nanas yang segar dan renyah.",
-    whatsappNumber: "62087763214718", // Nomor WhatsApp pemilik produk
+    whatsappNumber: "6281953672619", // Nomor WhatsApp pemilik produk
   },
 ];
 
@@ -76,7 +77,12 @@ const ProductDetail = () => {
   );
 
   if (!product) {
-    return <p>Produk tidak ditemukan.</p>;
+    return (
+      <div  className="flex flex-col justify-center items-center mt-40 mb-56 ">
+        <p className="text-xl font-semibold mb-10">Upss Produk yang kamu cari tidak ada.</p>
+        <Button name={"Kembali"}/>
+      </div>
+    );
   }
 
   const handleOrder = () => {
@@ -112,7 +118,7 @@ const ProductDetail = () => {
           className="mt-2 border rounded p-2 w-full border-2 border-secondary rounded-lg border-b-[4px]"
         >
           <option value="" className="">
-            Pilih Keripik
+            Pilih variant rasa Keripik Pepaya
           </option>
           <option value="Rasa Original" className="">
             Rasa Original
@@ -124,6 +130,9 @@ const ProductDetail = () => {
             Rasa Jagung
           </option>
         </select>
+        <p className="text-sm italic text-primary">
+          *Jika bukan keripik pepaya kosongkan
+        </p>
 
         <input
           type="text"
