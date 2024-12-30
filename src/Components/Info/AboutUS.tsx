@@ -10,13 +10,7 @@ export default function AboutUS() {
       <div>
         <div className="mt-10 p-6">
           <div className="absolute  right-0 hidden md:flex ">
-            <Stars2
-              fill=""
-              height="20"
-              lineColor=""
-              width="20"
-              className="absolute "
-            />
+            <Stars2/>
           </div>
           <h1 className="text-[30px] text-secondary font-bold">
             Tentang Keripik Pepaya
@@ -54,13 +48,7 @@ export default function AboutUS() {
             berbeda untuk memenuhi selera berbagai kalangan
           </p>
           <div className="absolute right-20 hidden md:flex">
-            <Stars
-              fill=""
-              height="20"
-              lineColor=""
-              width="20"
-              className="absolute"
-            />
+            <Stars/>
           </div>
           <h3 className="text-[24px] text-secondary font-bold mt-4">
             2. Varain rasa keripik pepaya
@@ -102,13 +90,7 @@ export default function AboutUS() {
           </p>
         </div>
         <div className="absolute right-32 hidden md:flex">
-          <Stroke
-            fill=""
-            height="20"
-            lineColor=""
-            width="20"
-            className="absolute"
-          />
+          <Stroke/>
         </div>
         <div className="mt-4 p-6">
           <h1 className="text-[30px] text-secondary font-bold">

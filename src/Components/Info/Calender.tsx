@@ -4,7 +4,7 @@ import { Datepicker } from "flowbite-react";
 
 const Calender = () => {
   const [selectedDate, setSelectedDate] = useState(null);
-
+  //eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleDateChange = (date: any) => {
     setSelectedDate(date);
     console.log("Selected date:", date);

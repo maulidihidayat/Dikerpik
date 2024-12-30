@@ -1,7 +1,7 @@
 import React from "react";
 import { IconType } from "./typeIcon";
 
-const Instagram = ({width,height,fill,lineColor} : IconType) => {
+const Instagram = ({width,height} : IconType) => {
   return (
     <div>
       <svg

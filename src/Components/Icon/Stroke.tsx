@@ -1,7 +1,6 @@
 import React from "react";
-import { IconType } from "./typeIcon";
 
-export const Stroke = ({width , height , fill , lineColor}: IconType) => {
+export const Stroke = () => {
   return (
     <div>
       <svg

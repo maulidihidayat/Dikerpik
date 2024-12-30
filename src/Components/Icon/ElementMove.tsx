@@ -1,7 +1,6 @@
 import React from "react";
-import { IconType } from "./typeIcon";
 
-const ElementMove = ({ width, height, fill, lineColor }: IconType) => {
+const ElementMove = () => {
   return (
     <div>
       <svg

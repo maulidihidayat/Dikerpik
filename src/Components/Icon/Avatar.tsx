@@ -1,7 +1,7 @@
 import React from "react";
 import { IconType } from "./typeIcon";
 
-const Avatar = ({ width, height, fill, lineColor }: IconType) => {
+const Avatar = ({ width, height, }: IconType) => {
   return (
     <div>
       <svg

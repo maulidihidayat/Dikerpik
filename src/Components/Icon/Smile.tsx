@@ -1,6 +1,6 @@
 import React from "react";
 import { IconType } from "./typeIcon";
-const Smile = ({ width, height, fill, lineColor }: IconType) => {
+const Smile = ({ width, height, fill }: IconType) => {
   return (
     <div>
       <svg

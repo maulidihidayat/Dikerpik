@@ -1,7 +1,6 @@
 import React from "react";
-import { IconType } from "./typeIcon";
 
-const Stars = ({ width, height, fill, lineColor } : IconType) => {
+const Stars = () => {
   return (
     <div>
       <svg
