@@ -64,7 +64,7 @@ export default function Home() {
           <Image src="/image/logo.png" alt="logoFmipa" width={50} height={50} />
           <Image src="/image/Fmipa.png" alt="logoFmipa" width={50} height={50} />
           <Image src="/image/logo pif.png" alt="logoFmipa" width={50} height={50} />
-          <Image src="/image/logoKKNN.jpg" alt="logoFmipa" width={50} height={50} className="rounded-full" />
+          <Image src="/image/LogoKKNN.jpg" alt="logoFmipa" width={50} height={50} className="rounded-full" />
         </div>
       </div>
 
