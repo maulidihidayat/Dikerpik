@@ -7,7 +7,6 @@ interface ButtonAll {
 }
 
 function Button({ name }: ButtonAll) {
-  const router = useRouter()
   return (
     <button className="bg-primary text-white border-2 border-b-[7px] border-secondary  rounded-2xl py-4 px-4 md:py-4 md:px-8 ">
       <div className="flex justify-between">
