@@ -2,7 +2,7 @@
 import { useParams } from "next/navigation";
 import { useState } from "react";
 import Image from "next/image";
-import Button from "@/Components/Info/Button";
+import Button2 from "@/Components/Info/Button2";
 
 const ProductData = [
   {
@@ -80,7 +80,7 @@ const ProductDetail = () => {
     return (
       <div  className="flex flex-col justify-center items-center mt-40 mb-56 ">
         <p className="text-xl font-semibold mb-10">Upss Produk yang kamu cari tidak ada.</p>
-        <Button name={"Kembali"}/>
+        <Button2 name={"Kembali"}/>
       </div>
     );
   }
