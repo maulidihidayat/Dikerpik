@@ -1,10 +1,10 @@
 import type { Config } from "tailwindcss";
-const flowbite = require("flowbite-react/tailwind");
+import flowbite from "flowbite-react/tailwind";
 
 export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/Components/**/*.{js,ts,jsx,tsx,mdx}", // Change 'components' to 'Components'
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/flowbite/**/*.js",
     flowbite.content(),
