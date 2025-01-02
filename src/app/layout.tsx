@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased`}>
+      <body className={`${inter.variable} antialiased scroll-smooth overflow-x-hidden scrollbar-hide`}>
         <Header />
         {children}
         <Footer className="" />
